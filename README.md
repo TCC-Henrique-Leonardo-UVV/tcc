@@ -12,22 +12,35 @@ Example description
 
 Before starting, check if you have all the prerequisites nailed down:
 
-- Example `<example>`.
+- You have the latest version of `git` installed
+- You have `python 3.10` or you have a `conda` distribution installed:
 
 ## 🚀 Installation
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+To install this project, follow this platform independent steps:
 
-Linux and macOS:
-
+First clone the repository with git:
 ```
-<example>
+git clone https://github.com/TCC-Henrique-Leonardo-UVV/tcc.git
 ```
 
-Windows:
-
+If you want to use a venv, create and activate it (you must be using python version 3.10):
 ```
-<example>
+python -m venv article-recommendation
+```
+
+or if you prefer to use conda, create an environment with python 3.10 and activate it:
+```
+conda create -n "article-recommendation" python=3.10
+```
+
+With the environment activated, install the appropriate dependencies:
+```
+# using venv and pip
+pip install -r requirements.txt
+
+# using conda
+conda env update --name article-recommendation --file environment.yml --prune
 ```
 
 ## ☕ Getting Started
@@ -40,7 +53,7 @@ To use this project, follow this steps:
 
 ## 🤝 Colaborators
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+We would like to thank the people who contributed to this project:
 
 <table>
   <tr>
